@@ -1,0 +1,38 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "center",
+  "positionY": "bottom",
+  "control-center-width": 380,
+  "control-center-height": 600,
+  "control-center-margin-bottom": 20,
+  "widgets": [
+    "label",
+    "buttons-grid",
+    "volume",
+    "backlight",
+    "mpris",
+    "title",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "Clear All"
+    },
+    "volume": {
+      "label": "󰕾"
+    },
+    "backlight": {
+      "label": "󰃠"
+    },
+    "buttons-grid": {
+      "actions": [
+        { "label": "󰖩", "command": "python3 ~/.config/hypr/scripts/wifi-manager.py" },
+        { "label": "󰂯", "command": "python3 ~/.config/hypr/scripts/bt-manager.py" },
+        { "label": "󰄀", "command": "hyprshot -m region" },
+        { "label": "󰚰", "command": "swaync-client -R" }
+      ]
+    }
+  }
+}

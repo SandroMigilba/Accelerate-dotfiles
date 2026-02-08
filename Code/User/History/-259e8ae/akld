@@ -1,0 +1,144 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "margin-top": 0,
+    "margin-bottom": 10,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 2,
+    "modules-left": [
+        "hyprland/workspaces",
+        "group/apps",
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "bluetooth",
+        "network",
+        "backlight",
+        "pulseaudio",
+        "battery",
+        "clock",
+        "custom/logout"
+    ],
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "max-length": 35,
+        "rewrite": {
+            "^\\s*$": " \u0d26\u0d4d\u0d26\u0d3f(\u02f5 \u2022\u0300 \u1d17 - \u02f5 )\u0d26\u0d4d\u0d26\u0d3f"
+        }
+    },
+    "group/apps": {
+        "orientation": "horizontal",
+        "modules": [
+            "image#google_chrome",
+            "image#steam",
+            "image#brave_web_browser",
+            "image#dolphin",
+            "image#visual_studio_code"
+        ]
+    },
+    "clock": {
+        "format": "{:%H:%M | %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "bluetooth": {
+        "format": "\uf293 {status}",
+        "format": " {status}",
+        "format-disabled": "\udb80\udcb2",
+        "format-connected": "\uf293 {device_alias}",
+        "format-connected-battery": "\uf293 {device_alias} {device_battery_percentage}%",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "python3 ~/.config/hypr/bt-manager.py",
+        "on-click": "blueman-manager",
+
+    },
+    "network": {
+        "format-wifi": "\uf1eb {essid}",
+        "format-ethernet": "\udb80\ude00 {ifname}",
+        "format-disconnected": "\udb81\uddaa Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr} \uf796",
+        "tooltip-format-wifi": "{essid} ({signaldBm}dBm) \uf1eb",
+        "tooltip-format-ethernet": "{ifname} \uf0c1",
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "python3 ~/.config/hypr/wifi-manager.py"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "\udb80\udcde",
+            "\udb80\udcdf",
+            "\udb80\udce0"
+        ],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": [
+            "\uf026",
+            "\uf027",
+            "\uf028"
+        ]
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": [
+            "\uf244",
+            "\uf243",
+            "\uf242",
+            "\uf241",
+            "\uf240"
+        ]
+    },
+    "custom/close": {
+        "format": " \udb80\udd56 ",
+        "on-click": "hyprctl dispatch killactive",
+        "tooltip": false
+    },
+    "custom/logout": {
+        "format": " \udb80\udf43 ",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+    "image#google_chrome": {
+        "path": "/usr/share/icons/hicolor/48x48/apps/google-chrome.png",
+        "size": 24,
+        "on-click": "/usr/bin/google-chrome-stable",
+        "tooltip": true
+    },
+    "image#steam": {
+        "path": "/usr/share/icons/hicolor/48x48/apps/steam.png",
+        "size": 24,
+        "on-click": "/usr/bin/steam",
+        "tooltip": true
+    },
+    "image#brave_web_browser": {
+        "path": "/usr/share/icons/hicolor/48x48/apps/brave-browser.png",
+        "size": 24,
+        "on-click": "/usr/bin/brave-browser-stable",
+        "tooltip": true
+    },
+    "image#dolphin": {
+        "path": "/usr/share/icons/hicolor/scalable/apps/org.kde.dolphin.svg",
+        "size": 24,
+        "on-click": "dolphin",
+        "tooltip": true
+    },
+    "image#visual_studio_code": {
+        "path": "/usr/share/pixmaps/vscode.png",
+        "size": 24,
+        "on-click": "/usr/share/code/code",
+        "tooltip": true
+    }
+}

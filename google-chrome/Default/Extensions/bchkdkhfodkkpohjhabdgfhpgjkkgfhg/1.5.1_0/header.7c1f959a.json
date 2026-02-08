@@ -1,0 +1,38 @@
+[
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "Access-Control-Allow-Origin",
+          "operation": "set",
+          "value": "*"
+        }
+      ],
+      "requestHeaders": [
+        {
+          "header": "Content-Type",
+          "operation": "set",
+          "value": "application/x-www-form-urlencoded"
+        },
+        {
+          "header": "Origin",
+          "operation": "remove"
+        },
+        {
+          "header": "X-Requested-With",
+          "operation": "set",
+          "value": "XMLHttpRequest"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "https://etpweb.answerai.pro/*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  }
+]

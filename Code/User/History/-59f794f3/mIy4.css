@@ -1,0 +1,55 @@
+window {
+    background-color: transparent;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+/* Memastikan teks bisa turun ke bawah */
+#text {
+    color: #ffffff;
+    font-weight: 500;
+    /* Properti krusial untuk wrap text di GTK/Wofi */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; /* Mengizinkan teks pindah baris */
+}
+
+/* Item Bubble */
+#entry {
+    margin: 5px 0px; 
+    padding: 15px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+    
+    /* Agar tinggi bubble menyesuaikan jumlah baris teks */
+    min-height: 40px; 
+}
+
+/* Saat Dipilih: Border Putih Abu-abu 1px */
+#entry:selected {
+    background-color: rgba(69, 69, 69, 0.6); 
+    border: 1px solid #e0e0e0; 
+}
+
+/* Input Search Tetap Sama */
+#input {
+    margin: 10px;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid #454545;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff;
+}
+
+#inner-box {
+    background-color: transparent;
+    margin: 10px;
+}
+
+#img {
+    margin-right: 15px;
+    border-radius: 10px;
+    /* Pastikan ikon tidak ikut gepeng saat teks panjang */
+    -gtk-icon-transform: scale(1);
+}

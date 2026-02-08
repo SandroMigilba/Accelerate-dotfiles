@@ -1,0 +1,113 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=false
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=false
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=210,210,210
+BackgroundNormal=239,240,241
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=127,140,141
+ForegroundLink=118,54,221
+ForegroundNegative=218,68,83
+ForegroundNeutral=198,92,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Colors:Selection]
+BackgroundAlternate=146,110,228
+BackgroundNormal=146,110,228
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=255,255,255
+ForegroundInactive=200,200,200
+ForegroundLink=255,255,255
+ForegroundNegative=255,100,100
+ForegroundNeutral=255,200,100
+ForegroundNormal=255,255,255
+ForegroundPositive=150,255,150
+ForegroundVisited=230,230,230
+
+[Colors:View]
+BackgroundAlternate=247,248,250
+BackgroundNormal=252,252,252
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=127,140,141
+ForegroundLink=118,54,221
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Colors:Window]
+BackgroundAlternate=218,222,225
+BackgroundNormal=239,240,241
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=127,140,141
+ForegroundLink=118,54,221
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[General]
+AccentColor=146,110,228
+ColorScheme=Wp1_Fixed
+
+[Icons]
+Theme=candy-icons
+
+[KDE]
+LookAndFeelPackage=org.nobaraproject.desktop
+widgetStyle=Fusion
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=157
+View Style=DetailTree
+
+[WM]
+activeBackground=173,148,231
+activeBlend=252,252,252
+activeForeground=0,0,0
+inactiveBackground=239,240,241
+inactiveBlend=255,255,127
+inactiveForeground=189,195,199

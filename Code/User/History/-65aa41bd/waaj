@@ -1,0 +1,50 @@
+[global]
+    monitor = 0
+    follow = mouse
+    
+    width = 250
+    height = 110
+    offset = 0x60
+    origin = bottom-center
+    
+    # Frame dibuat sedikit lebih gelap agar memisahkan notifikasi dari background putih
+    frame_width = 2
+    frame_color = "#88888820" 
+    corner_radius = 20
+    
+    # Font dibuat Bold agar lebih tebal dan mudah dibaca
+    font = JetBrainsMono Nerd Font Bold 10
+    alignment = center
+    padding = 15
+    horizontal_padding = 15
+    
+    # Aktifkan bayangan (jika compositor seperti Hyprland mendukung shadow)
+    # Ini membantu menciptakan separasi visual di atas layar putih
+    show_indicators = true
+    
+    progress_bar = true
+    progress_bar_height = 8
+    progress_bar_frame_width = 0
+    progress_bar_corner_radius = 4
+    progress_bar_foreground = "#eeeeee"
+    progress_bar_background = "#00000033" # Background bar dibuat gelap agar terlihat
+
+[urgency_low]
+    # Background menggunakan warna gelap transparan (Frosted Dark Glass)
+    # Ini adalah solusi terbaik: teks putih di atas background gelap transparan
+    # background = "#1e1e2eaa" 
+    background = "#1e1e2e20" 
+    foreground = "#ffffff"
+    timeout = 2
+
+[urgency_normal]
+    # Menggunakan sedikit tint gelap agar teks putih kontras
+    background = "#1e1e2eaa"
+    foreground = "#ffffff"
+    timeout = 2
+
+[urgency_critical]
+    background = "#ff5555"
+    foreground = "#ffffff"
+    frame_color = "#ff0000"
+    timeout = 0

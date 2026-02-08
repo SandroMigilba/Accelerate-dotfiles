@@ -1,0 +1,38 @@
+/* Warna berdasarkan dunstrc kamu */
+@define-color bg_color rgba(0, 0, 0, 0.25); /* #00000041 */
+@define-color accent_color rgba(59, 235, 255, 0.68); /* #3bebffaf */
+
+* {
+    font-family: "JetBrainsMono Nerd Font Bold";
+    font-size: 10pt;
+    background-color: transparent;
+}
+
+.notification {
+    background-color: @bg_color;
+    border-radius: 20px;
+    border: 2px solid rgba(93, 0, 255, 0.06); /* #5d00ff10 */
+    margin: 10px;
+    padding: 15px;
+    box-shadow: none;
+}
+
+/* Mengatur teks agar putih bersih */
+.notification-default .notification-content .summary,
+.notification-default .notification-content .body {
+    color: #ffffff;
+    text-shadow: none;
+}
+
+/* --- Progress Bar (Sama seperti Dunst) --- */
+progressbar {
+    background-color: rgba(255, 255, 255, 0.06); /* progress_bar_background #ffffff10 */
+    border-radius: 4px;
+    min-height: 8px;
+    margin-top: 10px;
+}
+
+progress {
+    background-color: @accent_color; /* progress_bar_foreground #3bebffaf */
+    border-radius: 4px;
+}

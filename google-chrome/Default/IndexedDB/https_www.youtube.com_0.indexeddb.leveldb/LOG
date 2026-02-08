@@ -1,0 +1,30 @@
+2026/02/04-07:52:51.961 8bf Reusing MANIFEST /home/xeeukanbara/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/04-07:52:51.961 8bf Recovering log #35
+2026/02/04-07:52:52.010 8bf Reusing old log /home/xeeukanbara/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000035.log 
+2026/02/04-08:12:05.942 8bf Level-0 table #40: started
+2026/02/04-08:12:05.975 8bf Level-0 table #40: 1470350 bytes OK
+2026/02/04-08:12:05.980 8bf Delete type=0 #35
+2026/02/04-08:20:47.148 8cc Compacting 1@1 + 1@2 files
+2026/02/04-08:20:47.159 8cc Generated table #41@1: 707 keys, 69065 bytes
+2026/02/04-08:20:47.159 8cc Compacted 1@1 + 1@2 files => 69065 bytes
+2026/02/04-08:20:47.163 8cc compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/04-08:20:47.163 8cc Delete type=2 #40
+2026/02/04-08:20:47.163 8cc Delete type=2 #37
+2026/02/04-09:27:39.887 8cc Level-0 table #43: started
+2026/02/04-09:27:39.922 8cc Level-0 table #43: 1287733 bytes OK
+2026/02/04-09:27:39.926 8cc Delete type=0 #39
+2026/02/04-09:36:07.086 8bf Compacting 1@1 + 1@2 files
+2026/02/04-09:36:07.104 8bf Generated table #44@1: 858 keys, 73307 bytes
+2026/02/04-09:36:07.104 8bf Compacted 1@1 + 1@2 files => 73307 bytes
+2026/02/04-09:36:07.108 8bf compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/04-09:36:07.109 8bf Delete type=2 #41
+2026/02/04-09:36:07.109 8bf Delete type=2 #43
+2026/02/04-11:01:53.467 8bf Level-0 table #46: started
+2026/02/04-11:01:53.494 8bf Level-0 table #46: 1209657 bytes OK
+2026/02/04-11:01:53.498 8bf Delete type=0 #42
+2026/02/04-11:03:52.442 8cd Compacting 1@1 + 1@2 files
+2026/02/04-11:03:52.454 8cd Generated table #47@1: 1006 keys, 80566 bytes
+2026/02/04-11:03:52.454 8cd Compacted 1@1 + 1@2 files => 80566 bytes
+2026/02/04-11:03:52.456 8cd compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/04-11:03:52.456 8cd Delete type=2 #44
+2026/02/04-11:03:52.456 8cd Delete type=2 #46

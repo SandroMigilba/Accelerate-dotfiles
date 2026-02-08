@@ -1,0 +1,42 @@
+/* --- Bagian Entry yang Dirapikan --- */
+
+#entry {
+    /* Gunakan margin kecil (atas-bawah) agar antar aplikasi ada pemisah tipis */
+    margin: 2px 8px; 
+    
+    /* Padding disesuaikan: 10px atas-bawah, 15px kiri-kanan */
+    padding: 10px 15px; 
+    
+    /* Warna default dibuat lebih transparan agar tidak terlalu kontras saat tidak dipilih */
+    background-color: rgba(255, 255, 255, 0.03); 
+    
+    /* Radius dikurangi agar terlihat lebih modern (tidak terlalu bulat lonjong) */
+    border-radius: 12px; 
+    
+    /* Border transparan sebagai placeholder agar saat selected tidak "loncat" */
+    border: 2px solid transparent; 
+    
+    /* Transition halus untuk hover/selection */
+    transition: all 0.15s ease-in-out;
+    
+    /* Hapus max-width agar lebar entry otomatis mengikuti lebar window/search box */
+}
+
+#entry:selected {
+    background-color: rgba(45, 55, 88, 0.9); 
+    border: 2px solid #e0e0e0;
+}
+
+#text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    /* Pastikan teks tidak terlalu mepet ke ikon */
+    margin-left: 5px; 
+}
+
+#img {
+    /* Ukuran ikon disesuaikan agar proporsional dengan tinggi baris */
+    margin-right: 12px;
+    border-radius: 6px;
+}

@@ -1,0 +1,18 @@
+2026/02/04-05:00:28.108 5 Reusing MANIFEST /home/xeeukanbara/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2026/02/04-05:00:28.136 5 Recovering log #25
+2026/02/04-05:00:28.318 5 Reusing old log /home/xeeukanbara/.config/google-chrome/Default/Local Storage/leveldb/000025.log 
+2026/02/04-05:15:00.483 7 Level-0 table #28: started
+2026/02/04-05:15:00.512 7 Level-0 table #28: 18538 bytes OK
+2026/02/04-05:15:00.521 7 Delete type=0 #25
+2026/02/04-05:15:00.522 7 Compacting 4@0 + 1@1 files
+2026/02/04-05:15:00.550 7 Generated table #29@0: 310 keys, 31665 bytes
+2026/02/04-05:15:00.550 7 Compacted 4@0 + 1@1 files => 31665 bytes
+2026/02/04-05:15:00.556 7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/02/04-05:15:00.556 7 Delete type=2 #20
+2026/02/04-05:15:00.556 7 Delete type=2 #24
+2026/02/04-05:15:00.556 7 Delete type=2 #28
+2026/02/04-05:15:00.556 7 Delete type=2 #17
+2026/02/04-05:15:00.556 7 Delete type=2 #22
+2026/02/04-07:31:12.088 5 Level-0 table #31: started
+2026/02/04-07:31:18.775 5 Level-0 table #31: 14024 bytes OK
+2026/02/04-07:31:19.682 5 Delete type=0 #27

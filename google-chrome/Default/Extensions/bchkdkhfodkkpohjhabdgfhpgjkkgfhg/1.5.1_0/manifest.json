@@ -1,0 +1,62 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.3c1ed2d2.png",
+         "16": "icon16.plasmo.6c567d50.png",
+         "32": "icon32.plasmo.76b92899.png",
+         "48": "icon48.plasmo.aced7582.png",
+         "64": "icon64.plasmo.8bb5e6e0.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "Answer.AI Tech Group",
+   "background": {
+      "service_worker": "static/background/index.js"
+   },
+   "content_scripts": [ {
+      "css": [  ],
+      "js": [ "relayMessage.e92aae5e.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   }, {
+      "css": [ "font.78aa8533.css", "tabs/chatTab.fc18cf50.css" ],
+      "js": [ "root-container.e09813a7.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "header.7c1f959a.json"
+      } ]
+   },
+   "description": "Your AI assistant ChatGPT Plugin.Answer questions and get AI answers quickly,write emails,articles,chatbot,learning assistant.",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icon128.plasmo.3c1ed2d2.png",
+      "16": "icon16.plasmo.6c567d50.png",
+      "32": "icon32.plasmo.76b92899.png",
+      "48": "icon48.plasmo.aced7582.png",
+      "64": "icon64.plasmo.8bb5e6e0.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhYA1g/6J5kQD3zG5aDWFdGyfquBG52CvFaxDPQTZlQwrj1VJQ+8Z+3uJOMKsez99nSClbQkx9DrujEh2zONT2CXo7blPlkJEQ9FWCcuwS5l6qa4VHHO6uN28n9IQzOfiwIKUgnqf5Sw/yGzXgFY33N92LovXgvhIRW8J2idrEjgV5xpjFEDw1ucWNCUeAgjeWfT19YoTpTKeHwMSxhHfOawDh7h2Z0dzCDekU3+hCo70OJEV2q0pRscEvzu0XPKm+FxFGVhLriBGqd6dw7OgaurpZh0TiSXo3kt8YZWl7Vs+uSl4ysZbARO8oDPF9un7BbgVonyKdRDv04QKWKhFUwIDAQAB",
+   "manifest_version": 3,
+   "name": "AnswerAI - Homework AI Tutor & Study Helper",
+   "oauth2": {
+      "client_id": "618282358361-d9m1i5dcpp3c8r0prufc5ptvk5gm08od.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ]
+   },
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "scripting", "activeTab", "clipboardWrite", "tabs", "declarativeNetRequest", "declarativeNetRequestWithHostAccess", "declarativeNetRequestFeedback", "unlimitedStorage", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*/*", "http://*/*", "file://*/*" ],
+      "resources": [ "assets/*.png", "assets/*.svg", "assets/*.json", "assets/*/*.png", "assets/*/*.svg", "assets/*/*.json", "assets/woff-v2/*", "tabs/output/chtml/fonts/woff-v2/*", "tabs/input/*" ]
+   }, {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "Manrope-Light.217e6e99.ttf", "Manrope-Medium.08e83e68.ttf", "Manrope-Bold.8954806f.woff2", "Raleway-Black.5258362c.ttf", "Raleway-Bold.f0c67ca5.ttf", "Raleway-Medium.68868f24.ttf", "Raleway-Regular.32025ea4.ttf", "root-container.a20896db.css", "Manrope-Light.217e6e99.ttf", "Manrope-Medium.08e83e68.ttf", "Manrope-Bold.8954806f.woff2", "Raleway-Black.5258362c.ttf", "Raleway-Bold.f0c67ca5.ttf", "Raleway-Medium.68868f24.ttf", "Raleway-Regular.32025ea4.ttf", "root-container.c7375ac7.css", "root-container.12e8aa49.css", "root-container.357aa6a0.css", "root-container.9be222ed.css", "root-container.7dee7bce.css", "root-container.f29263dd.css", "root-container.4efd0791.css", "root-container.56a5280a.css", "root-container.2130214c.css", "root-container.63d4abea.css", "ic_chat_aipic_2.06685a0b.png", "root-container.051325b9.css", "root-container.652d8ae5.css", "tabs/chatTab.5c057946.css", "ic_card_math_deco.89cd41c4.png", "tabs/chatTab.eaf7fed2.css", "tabs/chatTab.8b910821.css", "tabs/chatTab.db6b4ffa.css", "tabs/chatTab.a54a7aef.css", "tabs/chatTab.c49c9d8f.css", "tabs/chatTab.498f021a.css", "tabs/chatTab.b7981287.css", "tabs/chatTab.d83986f3.css", "tabs/chatTab.fd9ba398.css", "tabs/chatTab.3c8031cc.css", "tabs/chatTab.5fae2bf2.css", "tabs/chatTab.aec14a2f.css", "tabs/chatTab.dd9875ed.css", "tabs/chatTab.d2d29e63.css", "tabs/chatTab.eaddfcc1.css", "tabs/chatTab.2f8748b2.css", "tabs/chatTab.f0c92d9a.css", "tabs/chatTab.e6d7456e.css", "tabs/chatTab.c922383a.css", "square.83801486.png", "square-hover.89d16f78.png", "square-click.fc255333.png", "round.c605a65f.png", "round-hover.b7bde855.png", "round-click.eec59bc4.png", "right-top.bacdd629.png", "right-top-hover.08caac1d.png", "right-top-click.4c03ba45.png", "brush.5bc26322.png", "brush-hover.fb39bea4.png", "brush-click.9ca82ae5.png", "mosaicPen.c053aca2.png", "mosaicPen-hover.44b3b408.png", "mosaicPen-click.191ffa91.png", "seperateLine.fce3dbff.png", "text.0b0a66e5.png", "text-hover.87f18435.png", "text-click.a3388db6.png", "save.117534a1.png", "save-hover.d115dbb4.png", "save-click.7f12e896.png", "undo-disabled.4667e535.png", "undo.8460179d.png", "undo-hover.41a44d7f.png", "screen_shot_close.cdd78f1b.png", "screen_shot_close_hover.22706877.png", "screen_shot_confirm.27711718.png", "screen_shot_confirm_hover.ef0ae628.png", "round-normal-small.2bfdacda.png", "round-selected-small.1c098779.png", "round-normal-medium.d3ac68a5.png", "round-selected-medium.0dadff72.png", "round-normal-big.9f270e4e.png", "round-selected-big.a5c73315.png", "PopoverPullDownArrow.69a9132c.png", "tabs/chatTab.8909c6e8.css", "ic_arrow_right.9a7dffa8.svg", "ic_arrow_right_white.9a9cdfc4.svg", "tabs/chatTab.f2e6976a.css", "tabs/chatTab.bd249edb.css", "tabs/chatTab.5e8535c4.css", "tabs/chatTab.45f088cf.css", "ic_popup_close2.2582dcab.png", "tabs/chatTab.f0baaf50.css", "ic_sunscribe_nno.4f63d4cb.png", "ic_sunscribe_tick.6225b0ea.png", "tabs/chatTab.a5ee1940.css", "tabs/chatTab.03db2c1c.css", "tabs/chatTab.e5d438c9.css", "ic_superai_bg.7103b195.png", "tabs/chatTab.36582ab9.css", "tabs/chatTab.6f4d77bd.css", "tabs/chatTab.b3b916d8.css", "tabs/chatTab.f9fd0cea.css", "tabs/chatTab.2a5a3be1.css", "img_chat_flashcard.f400ad74.png", "tabs/chatTab.cb62cb1b.css", "tabs/chatTab.35259627.css", "tabs/chatTab.7f5fd043.css", "tabs/chatTab.4f303114.css", "tabs/chatTab.b98cf2a8.css", "tabs/chatTab.6501baae.css", "tabs/chatTab.de80e029.css", "tabs/chatTab.49a445fe.css", "tabs/chatTab.a2141e36.css", "tabs/chatTab.0501b039.css", "tabs/chatTab.452d0d2f.css" ]
+   } ]
+}

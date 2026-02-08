@@ -1,0 +1,46 @@
+{
+  "positionX": "center",
+  "positionY": "bottom",
+  "layer": "overlay",
+  "control-center-width": 380,
+  "control-center-height": 500,
+  "control-center-margin-bottom": 20,
+  "control-center-margin-top": 20,
+  "control-center-margin-right": 20,
+  "control-center-margin-left": 20,
+  
+  "widgets": [
+    "label",
+    "buttons-grid",
+    "mpris",
+    "notifications"
+  ],
+  
+  "widget-config": {
+    "label": {
+      "text": "Pusat Kendali",
+      "clear-all-button": true,
+      "button-text": "Clear"
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "",
+          "command": "python3 ~/.config/hypr/scripts/wifi-manager.py"
+        },
+        {
+          "label": "",
+          "command": "python3 ~/.config/hypr/scripts/bt-manager.py"
+        },
+        {
+          "label": "󰄀",
+          "command": "hyprshot -m region"
+        },
+        {
+          "label": "󰚰",
+          "command": "swaync-client -R"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+width=700
+height=470
+location=center
+show=drun
+prompt=Search...
+allow_images=true
+image_size=28
+no_headings=true
+sort_order=alphabetical

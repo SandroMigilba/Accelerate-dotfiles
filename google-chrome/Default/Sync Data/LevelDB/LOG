@@ -1,0 +1,9 @@
+2026/02/04-07:52:35.711 8cc Reusing MANIFEST /home/xeeukanbara/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/02/04-07:52:35.897 8cc Recovering log #17
+2026/02/04-07:52:36.115 8cc Reusing old log /home/xeeukanbara/.config/google-chrome/Default/Sync Data/LevelDB/000017.log 
+2026/02/04-08:45:16.210 8bf Level-0 table #22: started
+2026/02/04-08:45:16.222 8bf Level-0 table #22: 115251 bytes OK
+2026/02/04-08:45:16.227 8bf Delete type=0 #17
+2026/02/04-11:55:02.133 8bf Level-0 table #24: started
+2026/02/04-11:55:05.336 8bf Level-0 table #24: 115431 bytes OK
+2026/02/04-11:55:10.911 8bf Delete type=0 #21

@@ -1,0 +1,11 @@
+width=350
+height=400
+location=center
+show=drun
+prompt=Search...
+allow_images=true
+image_size=24
+# Menghilangkan garis pembatas antar elemen
+no_headings=true
+# Membuat background window benar-benar tidak terlihat
+dynamic_lines=true

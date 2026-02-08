@@ -1,0 +1,6 @@
+2026/01/06-23:16:10.765 e18 Creating DB /home/xeeukanbara/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb since it was missing.
+2026/01/06-23:16:10.797 e18 Reusing MANIFEST /home/xeeukanbara/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/06-23:21:38.461 e1a Level-0 table #5: started
+2026/01/06-23:21:38.467 e1a Level-0 table #5: 2134 bytes OK
+2026/01/06-23:21:38.470 e1a Delete type=0 #3
+2026/01/06-23:21:38.471 e1a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

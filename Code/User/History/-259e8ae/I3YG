@@ -1,0 +1,108 @@
+{
+    "layer": "top",
+    // "position": "top",
+    "position": "bottom",
+    // "margin-top": 10,
+    "margin-top": 0,
+    "margin-bottom": 10,
+    // "margin-left": 20,
+    "margin-left": 10,
+    // "margin-right": 20,
+    "margin-right": 10,
+    "spacing": -5,
+
+    "modules-left": ["hyprland/workspaces", "group/apps", "hyprland/window" ],
+    "modules-center": ["clock"],
+    "modules-right": ["bluetooth", "network", "backlight", "pulseaudio", "battery", "custom/close"],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "*": 5 
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "max-length": 35,
+        "rewrite": {
+            "^\\s*$": "Hello Masterr   ദ്ദി(˵ •̀ ᴗ - ˵ )ദ്ദി   ✧✧"
+        }
+    },
+
+    "group/apps": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/browser",
+            "custom/terminal",
+            "custom/files",
+            "custom/editor",
+            "custom/spotify"
+        ]
+    },
+
+    "custom/browser": { "format": "󰈹", "on-click": "google-chrome", "tooltip": false },
+    "custom/terminal": { "format": "", "on-click": "kitty", "tooltip": false },
+    "custom/files": { "format": "󰉋", "on-click": "nautilus", "tooltip": false },
+    "custom/editor": { "format": "󱞂", "on-click": "code", "tooltip": false },
+    "custom/spotify": { "format": "", "on-click": "spotify", "tooltip": false },
+
+    "clock": {
+        "format": "{:%H:%M | %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": "󰂲",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        
+        "on-click": "systemsettings kcm_bluetooth"
+    },
+
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-disconnected": "󰖪 Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format-wifi": "{essid} ({signaldBm}dBm) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        
+        // Klik kiri: Buka Settings KDE (Plasma 6)
+        "on-click": "systemsettings kcm_networkmanagement",
+        
+        // Klik kanan: Buka Network Manager di Terminal (opsional tapi keren)
+        // "on-click-right": "konsole -e nmtui"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": ["", "", ""]
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "custom/close": {
+        "format": " 󰅖 ", // Icon X dari Nerd Fonts
+        "on-click": "hyprctl dispatch killactive", 
+        "tooltip": false
+    },
+}

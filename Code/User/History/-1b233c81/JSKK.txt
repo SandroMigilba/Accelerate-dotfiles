@@ -1,0 +1,9 @@
+cava = visualizer
+cmatrix = rain
+btop = disk
+fastfetch = rincian device
+history = melihat history command
+qt6ct = untuk atur tema hyprland
+
+fitur logout : Lock, Logout, suspend shutdown, hibernate, reboot
+

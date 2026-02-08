@@ -1,0 +1,22 @@
+.notification-row {
+    outline: none;
+    background: none;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+    background: none;
+}
+
+.notification {
+    /* Pastikan tidak ada margin horizontal yang memaksa ke samping */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 2px solid rgba(93, 0, 255, 0.06);
+    padding: 15px;
+    width: 250px; /* Samakan dengan width di config.json */
+}

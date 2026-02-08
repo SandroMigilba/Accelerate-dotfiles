@@ -1,0 +1,6 @@
+2026/01/18-08:46:21.889 d75 Creating DB /home/xeeukanbara/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_github.com_0.indexeddb.leveldb since it was missing.
+2026/01/18-08:46:21.910 d75 Reusing MANIFEST /home/xeeukanbara/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_github.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/18-08:51:31.423 d86 Level-0 table #5: started
+2026/01/18-08:51:31.458 d86 Level-0 table #5: 898 bytes OK
+2026/01/18-08:51:31.480 d86 Delete type=0 #3
+2026/01/18-08:51:31.481 d86 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

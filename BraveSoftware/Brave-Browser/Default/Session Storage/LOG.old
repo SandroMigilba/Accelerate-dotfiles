@@ -1,0 +1,36 @@
+2026/01/29-08:29:01.858 7 Reusing MANIFEST /home/xeeukanbara/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
+2026/01/29-08:29:03.305 7 Recovering log #57
+2026/01/29-08:29:03.348 7 Reusing old log /home/xeeukanbara/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000057.log 
+2026/01/29-08:34:06.946 5 Level-0 table #61: started
+2026/01/29-08:34:06.969 5 Level-0 table #61: 737609 bytes OK
+2026/01/29-08:34:06.975 5 Delete type=0 #57
+2026/01/29-08:34:06.975 5 Compacting 4@0 + 1@1 files
+2026/01/29-08:34:07.013 5 Generated table #62@0: 1184 keys, 758317 bytes
+2026/01/29-08:34:07.013 5 Compacted 4@0 + 1@1 files => 758317 bytes
+2026/01/29-08:34:07.017 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/29-08:34:07.018 5 Delete type=2 #61
+2026/01/29-08:34:07.018 5 Delete type=2 #53
+2026/01/29-08:34:07.018 5 Delete type=2 #55
+2026/01/29-08:34:07.018 5 Delete type=2 #51
+2026/01/29-08:34:07.018 5 Delete type=2 #58
+2026/01/29-08:35:23.502 7 Level-0 table #64: started
+2026/01/29-08:35:23.518 7 Level-0 table #64: 389015 bytes OK
+2026/01/29-08:35:23.522 7 Delete type=0 #60
+2026/01/29-08:39:31.373 7 Level-0 table #66: started
+2026/01/29-08:39:31.386 7 Level-0 table #66: 346553 bytes OK
+2026/01/29-08:39:31.391 7 Delete type=0 #63
+2026/01/29-08:42:57.571 5 Level-0 table #68: started
+2026/01/29-08:42:57.588 5 Level-0 table #68: 469755 bytes OK
+2026/01/29-08:42:57.591 5 Delete type=0 #65
+2026/01/29-10:43:21.357 7 Level-0 table #70: started
+2026/01/29-10:43:21.369 7 Level-0 table #70: 342283 bytes OK
+2026/01/29-10:43:21.373 7 Delete type=0 #67
+2026/01/29-10:43:21.374 7 Compacting 4@0 + 1@1 files
+2026/01/29-10:43:21.448 7 Generated table #71@0: 1222 keys, 1148542 bytes
+2026/01/29-10:43:21.448 7 Compacted 4@0 + 1@1 files => 1148542 bytes
+2026/01/29-10:43:21.452 7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/29-10:43:21.452 7 Delete type=2 #70
+2026/01/29-10:43:21.452 7 Delete type=2 #64
+2026/01/29-10:43:21.452 7 Delete type=2 #66
+2026/01/29-10:43:21.452 7 Delete type=2 #68
+2026/01/29-10:43:21.452 7 Delete type=2 #62

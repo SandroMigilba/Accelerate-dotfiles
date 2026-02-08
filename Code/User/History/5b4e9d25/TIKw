@@ -1,0 +1,47 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "center",
+  "positionY": "bottom",
+  "layer": "overlay",
+  "control-center-width": 380,
+  "control-center-height": 600,
+  "control-center-margin-bottom": 20,
+
+  "widgets": [
+    "label",
+    "buttons-grid",
+    "mpris",
+    "volume",
+    "backlight",
+    "calendar",
+    "notifications"
+  ],
+
+  "widget-config": {
+    "label": {
+      "text": "Pusat Kendali",
+      "clear-all-button": true,
+      "button-text": "Clear"
+    },
+    "volume": {
+      "label": "󰕾",
+      "show-per-app": true
+    },
+    "backlight": {
+      "label": "󰃠",
+      "device": "intel_backlight" 
+    },
+    "calendar": {
+      "show-none-events": true,
+      "update-interval": 1000
+    },
+    "buttons-grid": {
+      "actions": [
+        { "label": "", "command": "python3 ~/.config/hypr/wifi-manager.py" },
+        { "label": "", "command": "python3 ~/.config/hypr/bt-manager.py" },
+        { "label": "󰄀", "command": "hyprshot -m region" },
+        { "label": "󰚰", "command": "swaync-client -R" }
+      ]
+    }
+  }
+}

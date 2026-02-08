@@ -1,0 +1,39 @@
+* {
+    background-image: none;
+    box-shadow: none;
+    transition: all 0.3s cubic-bezier(.55,0,.1,1);
+}
+
+window {
+    /* Navy sangat transparan untuk efek kaca */
+    background-color: rgba(11, 18, 32, 0.5); 
+}
+
+button {
+    /* Liquid Look: Menggunakan lengkungan besar */
+    border-radius: 25px; 
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #e5e7eb;
+    /* Glass Effect: Hitam navy sangat transparan */
+    background-color: rgba(18, 26, 47, 0.4);
+    margin: 15px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+    /* Liquid Glow: Saat di-hover menjadi lebih terang dan biru */
+    background-color: rgba(56, 189, 248, 0.2);
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+/* Mengatur spesifik ikon */
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
+#hibernate { background-image: image(url("/usr/share/wlogout/icons/hibernate.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }

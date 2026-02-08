@@ -1,0 +1,47 @@
+window {
+    background-color: transparent;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+/* Kotak Input Pencarian dibuat lebih lebar */
+#input {
+    margin: 10px;
+    padding: 12px;
+    border-radius: 15px;
+    /* border: 1px solid #454545; */
+    border: 1px solid #000000;
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    background-color: rgba(255, 255, 255, 0.9); 
+    /* color: #ffffff; */
+    color: #000;
+}
+
+#inner-box {
+    background-color: transparent;
+    margin: 10px;
+}
+
+/* Item Aplikasi: Bubble Hitam Transparan */
+#entry {
+    margin: 5px 0px; /* Menghilangkan margin kiri-kanan agar lebar */
+    padding: 12px;
+    background-color: #454545; /* Hitam Opacity 50% */
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* SAAT AKTIF: Tetap hitam tapi muncul border putih 1px */
+#entry:selected {
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: 1px solid #e0e0e0; /* Border putih abu-abu 1px */
+}
+
+#text {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#img {
+    margin-right: 15px;
+}

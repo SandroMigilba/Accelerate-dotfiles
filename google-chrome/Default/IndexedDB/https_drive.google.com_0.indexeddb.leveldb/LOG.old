@@ -1,0 +1,5 @@
+2026/01/29-11:12:08.382 a057 Creating DB /home/xeeukanbara/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb since it was missing.
+2026/01/29-11:12:08.401 a057 Reusing MANIFEST /home/xeeukanbara/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/29-12:03:27.546 a057 Level-0 table #5: started
+2026/01/29-12:03:27.623 a057 Level-0 table #5: 3968632 bytes OK
+2026/01/29-12:03:27.633 a057 Delete type=0 #3

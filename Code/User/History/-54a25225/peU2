@@ -1,9 +1,0 @@
-width=400
-height=500
-location=center
-show=drun
-prompt=Cari...
-filter_rate=100
-allow_images=true
-image_size=32
-always_run=true

@@ -1,5 +1,0 @@
-cava = visualizer
-cmatrix = rain
-btop = disk
-fastfetch = rincian device
-history = melihat history command

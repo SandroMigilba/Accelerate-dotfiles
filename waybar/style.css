@@ -17,8 +17,8 @@ window#waybar {
     border-radius: 20px;
     margin: 0 1px;
     padding: 0px 10px;
-    /* border: 2px solid rgba(0, 238, 255, 0.676);  */
-    border: 2px solid rgba(255, 255, 255, 0.219);
+    /* border: 2px solid rgba(255, 255, 255, 0.219); */
+    border: 2px solid rgba(84, 92, 135, 0.376);
 }
 
 #workspaces:hover {
@@ -85,9 +85,8 @@ window#waybar {
     /* background-color: rgba(28, 34, 56, 0.787);  */
     background-color: rgba(0, 0, 0, 0.254);
 
-    /* border: 3px solid rgba(28, 34, 56, 0.787); */
-    /* border: 3px solid rgba(255, 255, 255, 0.1); */
-    border: 2px solid rgba(255, 255, 255, 0.219);
+    /* border: 2px solid rgba(255, 255, 255, 0.219); */
+    border: 2px solid rgba(84, 92, 135, 0.376);
     color: #ffffff;
     border-radius: 20px;
     padding: 2px 15px;
@@ -146,6 +145,10 @@ window#waybar {
     color: #8be9fd; /* Biru cerah */
 }
 
+#backlight {
+    font-family: "JetBrainsMono Nerd Font"; /* Atau font Nerd Font pilihanmu */
+}
+
 /* Tombol Close dengan warna merah khas */
 #custom-close {
     /* background-color: rgba(255, 85, 85, 0.45); 
@@ -173,10 +176,10 @@ window#waybar {
     padding: 2px 10px;
     margin: 0 5px;
     transition: 0.2s;
+    font-family: "JetBrainsMono Nerd Font";
 }
 
 #custom-logout:hover {
     padding: 2px 18px;
     box-shadow: 0px 0px 10px rgba(109, 34, 34, 0.553);
 }
-

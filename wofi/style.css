@@ -22,7 +22,7 @@ window {
 #entry {
     margin: 5px 0px; 
     padding: 15px; /* Lebih tebal agar terasa seperti bubble */
-    background-color: rgba(0, 0, 0, 0.5); /* Hitam 50% */
+    background-color: rgba(0, 0, 0, 0.479); /* Hitam 50% */
     border-radius: 30px;
     border: 3px solid rgba(99, 115, 144, 0.255);
     transition: all 0.2s ease-in-out;

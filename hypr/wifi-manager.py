@@ -34,9 +34,8 @@ class WifiItem(QFrame):
         h_layout = QHBoxLayout(self.row_header)
         sig = self.net['signal']
 
-        # Tambahkan simbol ✧ hanya jika statusnya active
         status_prefix = "✧ " if active else ""
-        icon = "󰖩 " if active else "󰖪 "
+        icon = "" if active else ""
         
         self.label_info = QLabel(f"{status_prefix}{icon}{self.net['ssid']} ({sig}%)")
         self.label_info.setStyleSheet("color: #ffffff; font-weight: bold; background: transparent; border: none;")
@@ -48,7 +47,14 @@ class WifiItem(QFrame):
 
         btn_del = QPushButton("🗑")
         btn_del.setFixedWidth(35)
-        btn_del.setStyleSheet("background: rgba(255, 50, 50, 0.2); border: none; color: white;")
+        btn_del.setStyleSheet("""
+            background: rgba(255, 50, 50, 0.2); 
+            border: none; 
+            color: white; 
+            padding-top: 8px; 
+            padding-bottom: 8px;
+            border-radius: 8px;
+        """)
         btn_del.clicked.connect(lambda: self.parent_gui.delete_wifi(self.net['ssid']))
 
         h_layout.addWidget(self.label_info)
@@ -70,7 +76,24 @@ class WifiItem(QFrame):
 
         btn_submit = QPushButton("Join")
         btn_submit.setFixedWidth(60)
-        btn_submit.setStyleSheet("background: #2e2e2e60; color: #f2f2f2; border-radius: 15px; border: none;")
+        btn_submit.setStyleSheet("""
+            QPushButton {
+                background: #333333; 
+                color: #f2f2f2; 
+                border-radius: 8px; 
+                border: 1px solid rgba(255,255,255,0.05);
+                padding-top: 6px;
+                padding-bottom: 6px;
+                font-weight: bold;
+                font-size: 11px;
+            }
+            QPushButton:hover {
+                background: #444444;
+            }
+            QPushButton:pressed {
+                background: #222222;
+            }
+        """)
         btn_submit.clicked.connect(self.submit_connection)
 
         input_h.addWidget(self.pass_input)

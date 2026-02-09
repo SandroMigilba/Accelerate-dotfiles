@@ -106,6 +106,10 @@ class NobaraCarousel(QWidget):
             return 0
 
     def initUI(self):
+        # --- UPDATE IDENTITAS WINDOW ---
+        self.setWindowTitle("Choose Wallpaper") # Muncul di Title Bar/Waybar
+        self.setObjectName("choose-wallpaper")  # Class Name (App ID) untuk Waybar
+        
         self.setWindowFlags(
             Qt.WindowType.FramelessWindowHint |
             Qt.WindowType.WindowStaysOnTopHint
@@ -224,6 +228,11 @@ class NobaraCarousel(QWidget):
 # ================= ENTRY =================
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    
+    # --- UPDATE METADATA APLIKASI ---
+    app.setApplicationName("Choose Wallpaper")
+    app.setDesktopFileName("choose-wallpaper") # Sesuai dengan nama file .desktop kamu
+    
     w = NobaraCarousel()
 
     geo = w.frameGeometry()

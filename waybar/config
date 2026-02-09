@@ -39,9 +39,6 @@
         "orientation": "horizontal",
         "modules": [
             "image#google_chrome",
-            "image#steam",
-            "image#brave_web_browser",
-            "image#dolphin",
             "image#visual_studio_code",
             "image#kitty"
         ]
@@ -73,11 +70,7 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
-        "format-icons": [
-            "\udb80\udcde",
-            "\udb80\udcdf",
-            "\udb80\udce0"
-        ],
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
         "on-scroll-up": "brightnessctl set 1%+",
         "on-scroll-down": "brightnessctl set 1%-"
     },
@@ -95,16 +88,21 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+            "\uf244",
+            "\uf243",
+            "\uf242",
+            "\uf241",
+            "\uf240"
+        ]
     },
-
     "custom/close": {
-        "format": " \udb80\udd56 ",
+        "format": "⏻",
         "on-click": "hyprctl dispatch killactive",
         "tooltip": false
     },
     "custom/logout": {
-        "format": " \udb80\udf43 ",
+        "format": "  ",
         "on-click": "wlogout",
         "tooltip": false
     },
@@ -112,24 +110,6 @@
         "path": "/usr/share/icons/hicolor/48x48/apps/google-chrome.png",
         "size": 24,
         "on-click": "/usr/bin/google-chrome-stable",
-        "tooltip": true
-    },
-    "image#steam": {
-        "path": "/usr/share/icons/hicolor/48x48/apps/steam.png",
-        "size": 24,
-        "on-click": "/usr/bin/steam",
-        "tooltip": true
-    },
-    "image#brave_web_browser": {
-        "path": "/usr/share/icons/hicolor/48x48/apps/brave-browser.png",
-        "size": 24,
-        "on-click": "/usr/bin/brave-browser-stable",
-        "tooltip": true
-    },
-    "image#dolphin": {
-        "path": "/usr/share/icons/hicolor/scalable/apps/org.kde.dolphin.svg",
-        "size": 24,
-        "on-click": "dolphin",
         "tooltip": true
     },
     "image#visual_studio_code": {
@@ -144,4 +124,5 @@
         "on-click": "kitty",
         "tooltip": true
     }
+
 }
